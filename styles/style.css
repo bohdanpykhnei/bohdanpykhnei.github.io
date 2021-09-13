@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	width: 100%;
+}
+.container{
+	max-width: 960px;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.left{
+	min-width: 25%;
+	background: blueviolet;
+}
+img{
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+}
+.personal__img{
+	width: 50%;
+	margin: 10px auto;
+}
+.personal{
+	margin: 10px;
+	color: white;
+}
+.personal__title{
+	font-size: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+	border-color: white;
+}
