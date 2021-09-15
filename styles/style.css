@@ -9,14 +9,14 @@ img{
 }
 .container{
 	max-width: 960px;
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
 .left{
 	min-width: 25%;
-	background: blueviolet;
+	background: #3f6592;
 }
 img{
 	border-radius: 50%;
@@ -28,12 +28,77 @@ img{
 	margin: 10px auto;
 }
 .personal{
-	margin: 10px;
+	margin: 24px;
 	color: white;
 }
 .personal__title{
 	font-size: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #000;
-	border-color: white;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #fff;
+}
+.personal__box{
+	margin-bottom: 10px;
+}
+.personal__sub-title{
+	font-weight: bold;
+}
+.personal__text{
+	font-weight: 200;
+}
+.wrap__sub-title{
+	display: flex;
+	justify-content: space-between;
+}
+.right{
+	color: black;
+	min-width: 75%;
+	margin:26px 30px;
+}
+.name{
+	font-size: 40px;
+	font-weight: bold;
+	border-bottom: 3px solid #d2d2d2;
+	padding-bottom: 23px;
+	margin-bottom: 20px;
+}
+.headline{
+	font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid #d2d2d2;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+.lead{
+	margin-top: 10px;
+}
+.lead__top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.lead__title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.lead__sub-title{
+	font-style: italic;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.lead__bottom{
+	color: #585858;
+	font-size: 17px;
+	margin-bottom: 25px;
+}
+.lead__right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.lead__title-text{
+	font-weight: 500;
+	color: #676767;
 }
