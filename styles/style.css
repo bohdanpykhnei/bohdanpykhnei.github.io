@@ -28,7 +28,7 @@ img{
 	margin: 10px auto;
 }
 .personal{
-	margin: 24px;
+	margin: 20px;
 	color: white;
 }
 .personal__title{
@@ -36,6 +36,7 @@ img{
 	font-weight: bold;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
+	margin-right: -20px;
 	border-bottom: 1px solid #fff;
 }
 .personal__box{
