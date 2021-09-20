@@ -121,6 +121,16 @@ img{
     width: 100%;
 	fill: #9aa0a6;
 }
+.icon{
+	background-image: url(https://cdn.icon-icons.com/icons2/1632/PNG/512/62829keyboard_109305.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    top: 23%;
+}
 .search__inner input{
 	width: 100%;
 	height: 100%;
@@ -133,12 +143,6 @@ input:focus-visible {
 }
 input:hover{
 	box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
-.icon{
-	display: flex;
-	width: 27px;
-	height: 23px;
-	background-color: red;
 }
 .search__btn{
 	display: flex;
@@ -178,12 +182,14 @@ input:hover{
 }
 .info{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	padding: 0 20px;
+	flex-wrap: wrap;
 }
 .info-left, .info-right{
 	padding: 15px;
 	font-size: 14px;
+	margin: 0 auto;
 }
 .info a{
 	padding: 15px;
