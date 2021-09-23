@@ -65,6 +65,32 @@ img{
 	min-width: 70%;
 	margin:26px 30px;
 }
+.menu{
+	margin-top: -10px;
+}
+.menu__list{
+	display: flex;
+	justify-content: end;
+}
+.menu__item{
+	margin-left: 20px;
+	list-style-type: none;
+}
+.menu__list-link{
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	transition: .3s;
+}
+.menu__list-link i{
+	margin-right: 5px;
+}
+.menu__list-link:hover{
+	background-color: rgba(60,64,67,0.1);
+	border-radius: 15px;
+}
 .name{
 	font-size: 40px;
 	font-weight: bold;
