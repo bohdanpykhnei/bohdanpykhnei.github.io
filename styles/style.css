@@ -138,6 +138,8 @@ img{
 	color: #676767;
 }
 .lead__title-text a{
+	display: flex;
+	margin-bottom: 3px;
 	text-decoration: none;
 	color: inherit;
 	transition: .4s;
