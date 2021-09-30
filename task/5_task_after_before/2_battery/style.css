@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	width: 100%;
+}
+.top_battery{
+	display: flex;
+	width: 500px;
+	height: 200px;
+	border: 8px solid black;
+	margin: 30px auto 15px;
+}
+.top_battery:before{
+	content: "";
+	width: 300px;
+	height: 200px;
+	background-color: black;
+}
+.top_battery:after{
+	content: "";
+	background-color: red;
+}
