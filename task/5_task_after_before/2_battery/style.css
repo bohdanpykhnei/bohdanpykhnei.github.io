@@ -7,20 +7,42 @@ img{
 	display: block;
 	width: 100%;
 }
-.top_battery{
-	display: flex;
-	width: 500px;
-	height: 200px;
-	border: 8px solid black;
-	margin: 30px auto 15px;
+.wrap{
+	width: 200px;
+	margin: 40px auto;
 }
-.top_battery:before{
-	content: "";
-	width: 300px;
-	height: 200px;
-	background-color: black;
+.battery{
+  width: 200px;
+  height: 70px;
+  border: 3px solid black;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  position: relative;
 }
-.top_battery:after{
-	content: "";
-	background-color: red;
+.battery:before, .battery:after {
+    content: " ";
+    position: absolute;
+}
+.battery:after{ 
+    width: 10px;
+    height: 30px;
+    background: black;
+    right: -10px;
+    top: 17px;
+    border-radius: 3px;
+}
+.battery::before{
+  height:100%;
+}
+.red:before{
+  background: red;
+  width: 35%;
+}
+.yellow:before{
+  background: yellow;
+  width: 65%;
+}
+.green:before{
+  background: green;
+  width: 100%;
 }
