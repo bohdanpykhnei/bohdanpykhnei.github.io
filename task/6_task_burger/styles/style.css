@@ -73,6 +73,7 @@ img{
 	font-weight: bold;
 }
 .aside__inner-text{
+	margin-bottom: 5px;
 	color: #333;
 }
 .uppercase{
