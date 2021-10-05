@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	width: 100%;
+}
+body{
+	display: flex;
+	justify-content: center;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	border-style: solid double solid dashed;
+	border-width: 5px 7px 5px 3px;
+	border-color: blue yellow blue green;
+}

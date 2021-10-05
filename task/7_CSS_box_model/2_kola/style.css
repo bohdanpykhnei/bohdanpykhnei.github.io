@@ -1,0 +1,74 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	width: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0 0 200px;
+}
+.vps1{
+	display: block;
+	margin: 100px 0 160px 100px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: blue;
+	box-shadow: 0 0 0 50px white,
+				0 0 0 100px red;
+}
+.vps2{
+	display: block;
+	margin: 0 0 60px 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: blue;
+	box-shadow: inset 0 0 0 50px white,
+				0 0 0 50px red;
+}
+.vps3{
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	background: red;
+	position: relative;
+}
+.vps3:before{
+	content: " "; 
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: white;
+	left: calc(50% - 100px);
+	top: calc(50% - 100px);
+}
+.vps3:after{
+	content: " "; 
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: blue;
+	left: calc(50% - 50px);
+	top: calc(50% - 50px);
+}
+.vps4{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 100px;
+	border-radius: 50%;
+	background: blue;
+	outline: 50px solid white;
+	box-shadow: 0 0 0 100px red;
+}
