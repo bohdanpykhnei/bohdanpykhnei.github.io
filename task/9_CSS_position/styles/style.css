@@ -59,7 +59,7 @@ body{
 	text-align: center;
 	position: relative;
 }
-.wrap:last-child{
+.section:last-child{
 	border-right: none;
 }
 .sticker{
