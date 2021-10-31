@@ -118,11 +118,12 @@ body{
 }
 .slick-dots li.slick-active:after{
 	content: "/5";
-	font-size: 14px;
+	font-size: 1em;
 }
 .slick-dots li button{
 	background-color: transparent;
 	border: none;
+	font-size: 1em;
 }
 .kits .title:after{
 	content: "i";
@@ -304,20 +305,99 @@ details[open] summary:after {
 }
 .about-us__text{
 	margin-bottom: 13px;
+	font-size: 15px;
+	line-height: 25px;
 }
 .reviews .title{
 	margin: 24px 0;
 }
+.reviews__inner{
+	padding: 0 0 30px;
+	border-bottom: 1px solid #DDDCFF;
+}
 .reviews__img{
-	width: 60%;
-	margin: 0 auto;
+	width: 78%;
+	margin: 0 auto 20px;
 }
 .reviews__text{
 
 }
 .reviews_name{
-
+	font-size: 18px;
+	line-height: 21px;
 }
 .reviews_desc{
-
+	font-size: 13px;
+	line-height: 15px;
+}
+.instagram{
+	padding: 30px 0 0;
+}
+.instagram_img{
+    width: 20%;
+    margin: 0 auto;
+}
+.instagram__title{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+}
+.instagram__desc{
+    text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+}
+.instagram__wrap-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.instagram__img-bg{
+    width: 50%;
+}
+.button{
+	width: 100%;
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #605DD4;
+	border-radius: 2px;	
+	text-decoration: none;
+	color: #fff;
+}
+.instagram__link{
+	margin: 30px 0 0;
+}
+.section{
+	background: #FAFAFF;
+}
+.contacts .title{
+	margin: 24px 0 7px;
+}
+.contacts_tel, .contacts_mail, .contacts_map{
+	display: block;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 25px;
+	color: #000;
+}
+.socials{
+	display: flex;
+	margin: 12px 0 0;
+}
+.socials_img-fb, .socials_img-insta{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 5px;
+}
+.socials_img-fb{
+	background-image: url("../images/fb.png");
+}
+.socials_img-insta{
+	background-image: url("../images/insta.png");
 }
