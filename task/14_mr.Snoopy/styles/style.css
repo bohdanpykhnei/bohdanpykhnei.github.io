@@ -202,6 +202,7 @@ summary{
 }
 details>summary{
 	list-style: none;
+	outline: none;
 	position: relative;
 }
 summary::-webkit-details-marker{
