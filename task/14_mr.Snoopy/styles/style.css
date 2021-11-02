@@ -74,20 +74,37 @@ body{
 .title{
 	font-size: 25px;
 	line-height: 29px;
-	margin: 21px 0 15px;
+	margin: 20px 0 15px;
+}
+.popular-products .title{
+	margin: 0 0 15px;
 }
 .popular-products{
 	background: #fafafa;
+	padding-top: 20px;
 	position: relative;
 }
+.like__link{
+	background-image: url("../images/like.png");
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 9px;
+	left: 260px;
+}
+.products{position: relative;}
 .products__img{
 	width: 255px;
 	height: 255px;
-	margin: 0 auto;
+	margin: 0 auto 12px;
 }
 .products__desc{
 	text-align: center;
 	font-weight: 700;
+	margin-bottom: 13px;
 }
 .slick-track{
 	display: flex;
@@ -95,13 +112,14 @@ body{
 .slick-list {
 	overflow: hidden;
 	padding: 0;
+	position: relative;
 }
 .slick-dots{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 5px;
+	top: 20px;
 	right: 20px;
 	background-color: #eee;
 	width: 53px;
@@ -465,4 +483,58 @@ details[open] summary:after {
 }
 .submit__btn{
 	border: none;
+	margin-bottom: 30px;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 25px 0;
+}
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+.footer .logo-img{
+	width: 116%;
+}
+.footer .socials{
+	margin: 0;
+}
+.footer .socials__link{
+	background-color: #fff0;
+}
+.footer__content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.aside{
+    width: 45%;
+}
+.contacts_tel, .contacts_mail{
+	color: inherit;
+	line-height: 13px;
+	margin-bottom: 10px;
+}
+.info{
+	margin-bottom: 10px;
+}
+.menu{
+	width: 45%;
+	padding-left: 10px;
+}
+.menu__list{
+	font-weight: 500;
+}
+.list__item{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.item__link{
+	text-decoration: none;
+	color: inherit;
 }
