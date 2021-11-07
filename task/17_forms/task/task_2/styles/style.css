@@ -63,3 +63,30 @@ form {
 	color: #d29d41;
 	margin-left: 5px;
 }
+.input_wrap{
+    position: relative;
+}
+.text{
+    content: "";
+    position: absolute;
+    background-image: url("../images/user.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    top: 50px;
+    right: 20px;
+}
+.pass{
+    content: "";
+    position: absolute;
+    background-image: url("../images/asterisk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    top: 50px;
+    right: 20px;
+}
