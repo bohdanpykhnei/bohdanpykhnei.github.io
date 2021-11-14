@@ -34,11 +34,15 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 .logo__img{
 	width: 225px;
 }
-.menu__list{
+#menu-toggle{
+  opacity: 0;
+}
+.header .menu__list{
 	display: flex;
 	justify-content: space-between;
 }
@@ -164,14 +168,19 @@ body{
 }
 .footer{
 	color: black;
+	padding: 20px 0;
 }
 .footer .container{
 	display: flex;
 	justify-content: space-between;
-	height: 150px;
+	min-height: 150px;
 	align-items: center;
 }
-.footer__menu .list__item{
+.footer .menu__list{
+	display: flex;
+	justify-content: space-between;
+}
+.footer .list__item{
 	margin-right: 70px;
 }
 .socials{
@@ -281,9 +290,9 @@ body{
 	.footer__menu .menu__list{
 		flex-wrap: wrap;
 	}
-	.list__item{
-		width: 25%;
-		margin: 5px auto;
+	.footer__menu .list__item{
+		width: 22%;
+		margin: 10px 20px;
 		text-align: center;
 	}
 	.gallery{
@@ -326,8 +335,72 @@ body{
 	}
 }
 @media(max-width: 640px){
-	.header__menu{
-		display: none;
+	.menu-btn{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: absolute;
+	  top: 0;
+	  right:0;
+	  width: 30px;
+	  height: 30px;
+	  background-color: #fff;
+	  border-radius: 50%;
+	  cursor: pointer;
+	  z-index: 1;
+	}
+	.menu-btn > span,
+	.menu-btn > span::before,
+	.menu-btn > span::after {
+	  display: block;
+	  position: absolute;
+	  width: 20px;
+	  height: 2px;
+	  background-color: #000;
+	  transition-duration: .25s;
+	}
+	.menu-btn > span::before {
+	  content: '';
+	  top: -6px;
+	}
+	.menu-btn > span::after {
+	  content: '';
+	  top: 6px;
+	}
+	.header .menu__list{
+	  display: block;
+	  position: fixed;
+	  visibility: hidden;
+	  top: 0;
+	  left: -100%;
+	  width: 300px;
+	  height: 100%;
+	  margin: 0;
+	  padding: 80px 0;
+	  list-style: none;
+	  background-color: #212b3a;
+	  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+	  transition-duration: .25s;
+	}
+	.header .list__item{
+		margin: 20px 0 20px 40px;
+		width: 100%;
+		text-align: left;
+	}
+	#menu-toggle:checked ~ .menu-btn > span{
+	  transform: rotate(45deg);
+	}
+	#menu-toggle:checked ~ .menu-btn > span::before{
+	  top: 0;
+	  transform: rotate(0);
+	}
+	#menu-toggle:checked ~ .menu-btn > span::after{
+	  top: 0;
+	  transform: rotate(90deg);
+	}
+	#menu-toggle:checked ~ .menu__list{
+	  visibility: visible;
+	  left: 0;
 	}
 	.title{
 		font-size: 2rem;
