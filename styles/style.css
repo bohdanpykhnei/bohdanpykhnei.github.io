@@ -1,0 +1,164 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  color: #323b4c;
+}
+img{
+	display: block;
+	width: 100%;
+}
+.container{
+	max-width: 1200px;
+	min-height: 100vh;
+	margin: 0 auto;
+  padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.left{
+	width: 30%;
+	background: #323b4c;
+  color: #fff;
+  padding: 0 20px;
+}
+.personal__img {
+  width: 65%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 1px #153050;
+  margin: 40px auto;
+}
+.personal{
+	margin-bottom: 30px;
+}
+.personal__title{
+	font-size: 22px;
+	font-weight: 400;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	margin-right: -20px;
+	border-bottom: 2px solid #fff;
+}
+.personal__box{
+	margin-bottom: 10px;
+}
+.personal__sub-title{
+	font-weight: 400;
+  font-size: 18px;
+}
+.personal__text{
+	font-weight: 200;
+}
+.personal__text a{
+	text-decoration: none;
+	color: inherit;
+	transition: .4s;
+}
+.personal__text a:hover{
+	color: #000;
+}
+.wrap__sub-title{
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+}
+.right{
+	color: black;
+	width: 70%;
+	padding: 26px 30px;
+}
+.name{
+	font-size: 44px;
+	font-weight: bold;
+	border-bottom: 3px solid #d2d2d2;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+.headline{
+	font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-bottom: 2px solid #d2d2d2;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+.lead{
+  margin-bottom: 20px;
+}
+.lead__top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.lead__title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.lead__sub-title{
+	font-style: italic;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.lead__bottom{
+	color: #585858;
+	font-size: 17px;
+}
+.lead__left{
+  width: 430px;
+}
+.lead__right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.lead__title-text{
+	font-weight: 600;
+	color: #676767;
+}
+.lead__title-text a{
+	margin-bottom: 3px;
+	text-decoration: none;
+	color: inherit;
+	transition: .4s;
+}
+.lead__title-text a:hover{
+	text-decoration: underline;
+	color: #000;
+}
+.social{
+	display: flex;
+	justify-content: space-around;
+}
+.social__link{
+	color: inherit;
+	text-decoration: none;
+	font-size: 35px;
+	transition: .4s;
+}
+.social__link:hover{
+	color: #000;
+}
+.mywork__inner a{
+  target="_blank"
+}
+.mywork__inner{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.mywork__link{
+  display: block;
+  width: 245px;
+  height: 245px;
+  background-image: url(../images/header_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
