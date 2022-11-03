@@ -168,6 +168,15 @@ img{
 .mywork__link:hover .mywork__link-logo{
   opacity: 1;
 }
+.mywork__link-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
 
 @media(max-width: 975px){
   .container{
