@@ -252,6 +252,8 @@ body{
   background-color: #00A4E5;
   padding: 11px 29px;
   border-radius: 2px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   transition: color .3s ease-in-out;
 }
 .btn:hover{
@@ -517,6 +519,15 @@ body{
     row-gap: 10px;
   }
 }
+@media(max-width: 551px){
+  .services__content-card{
+    width: 100%;
+  }
+  .services__content-img{
+    display: block;
+    margin: 0 auto 25px;
+  }
+}
 @media(max-width: 535px){
   .menu__list{
     display: inline-block;
@@ -574,7 +585,7 @@ body{
   .menu{
     position: fixed;
     left: -100%;
-    z-index: 100;
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s, opacity 0.5s ease-in-out;
@@ -593,17 +604,11 @@ body{
     text-align: center;
     visibility: visible;
     opacity: 1;
+    z-index: 3;
     transition: visible 0.5s, opacity 0.5s ease-in-out;
   }
   .noscroll{
     overflow: hidden;
-  }
-  .services__content-card{
-    width: 100%;
-  }
-  .services__content-img{
-    display: block;
-    margin: 0 auto 25px;
   }
   .get-in-touch {
     padding-top: 50px;
@@ -639,10 +644,16 @@ body{
     font-size: 12px;
     height: 35px;
   }
+  .footer{
+    padding: 15px 0;
+  }
 }
 @media(max-width: 434px){
   .socials{
     margin: 0;
+  }
+  .copy{
+    height: 30px;
   }
 }
 @media(max-width: 390px){
