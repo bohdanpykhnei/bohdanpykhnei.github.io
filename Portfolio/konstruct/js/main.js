@@ -1,21 +1,22 @@
-const button = document.querySelector("#burger-menu_button");
 const sideBar = document.querySelector("#menu");
 const burgerBtn = document.querySelector("#burger-menu_button");
+const body = document.body;
 
-button.addEventListener("click", open);
+burgerBtn.addEventListener("click", open);
 sideBar.addEventListener("click", close);
 
 function open(e) {
   e.preventDefault();
   sideBar.classList.toggle("menu__active");
   burgerBtn.classList.toggle("button__active");
-  document.body.classList.toggle("noscroll");
+  body.classList.toggle("no-scroll");
 }
+
 function close(e) {
   if (e.target.matches('a')) {
     sideBar.classList.remove("menu__active");
     burgerBtn.classList.remove("button__active");
-    document.body.classList.remove("noscroll");
+    body.classList.remove("no-scroll");
   }
 }
 // ==================================
